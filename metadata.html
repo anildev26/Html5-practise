@@ -1,0 +1,82 @@
+// METADATA Attribute
+
+
+<!--
+Attribute	    |    Value	              |   Description
+----------------|-------------------------|--------------------------------------------------------------------------
+name	        |    application-name     |   Specifies name for the metadata
+                    author
+                    description
+                    generator
+                    keywords	                
+-------------------------------------------------------------------------------------------------------------------
+http-equiv          content-type              Provides an HTTP reader for information/value of the content attribute
+                    default-style
+                    refresh
+-------------------------------------------------------------------------------------------------------------------
+content             text                      Gives the value associated with http-equiv or name attribute
+
+charset             character_set             Specifies character coding for an HTML document
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Use the below meta code line to specify the page content display to be adjusted to the device width being used to view the content with the initial zoom level as 100%.  This is useful to display content on different kinds of devices such as desktop, laptop, and mobile devices. -->
+
+    <!-- Responsive PAGE  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- You can change the zoom level depending on your requirement by specifying values to the initial-scale attribute as any positive value from 0.0 to 10.0. For example you can consider 0.1 = 10% zoom and  1.0 = 100% respectively. -->
+    <!-- --------------------------------------------------------------------------------------------------------------------------------- -->
+
+    <!-- Below line of code in the web app update browser to load page required resources from 2 origins by specifying values to default-src as: -->
+
+    <meta http-equiv="content-security-policy" content="default-src 'self' http://xyz.com">
+<!-- 
+    "self" indicates from the current domain to which page belongs to.
+
+    Explicitly mentioning the http://xyz.com value in the above example indicates that this domain is the trusted origin to load the resources. -->
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci recusandae delectus, ipsum quisquam explicabo, mollitia neque repudiandae nisi quis pariatur enim maxime dolor cum optio id eum omnis in error?</h1>
+</body>
+</html>
+
+<!-- ---------------------------------EXERCISE---------------------------------------------- -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Meta tag example</title>
+
+  <!-- Specifies the character encoding for the document. -->
+  <!-- ISO-8859-1 -->
+  <meta charset="utf-8">
+
+  <meta name="author" content="Anil">
+  <meta name="description" content="This is a sample demo to understand HTML.">
+  
+  <!-- A web app wants to allow content from a current domain and truste domain xyz 
+    and all its subdomains -->
+  <meta http-equiv="content-security-policy" content="default-src 'self' http://xyz.com" >
+
+  <!-- Specify the preferred style sheet to use.-->
+  <meta http-equiv="default-style" content="/style.css">
+
+   <!-- page content display to be adjusted to the device width being used to view the content with initial zoom level as 100% -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <p> Sample demo to explain meta tag with attributes </p>
+</body>
+
+</html>
