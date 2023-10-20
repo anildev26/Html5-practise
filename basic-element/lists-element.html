@@ -1,3 +1,10 @@
+<!-- There are three types of List Elements
+1) Unordered list [ul>li]
+2) Ordered List [ol>li]
+3) Description List [dl>dt>dd]
+-->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,9 +15,14 @@
   <body>
     <section>
       <h1>Unordered List Below:</h1>
+      <p>
+        The types of bullet points can be customized in an unordered list by
+        using the "list-style-type" (disc [default], circle, square) property
+        provided by CSS.
+      </p>
+      <p>By default, the value 'disc' will be assigned to the property</p>
       <h2>Courses:</h2>
-      <!-- The types of bullet points can be customized in an unordered list by using the "list-style-type" (disc [default], circle, square) property provided by CSS. -->
-      <!-- By default, the value 'disc' will be assigned to the property -->
+
       <!-- Whenever you do nested list, bydefault it changes the "list style type", you don't need to mention separately -->
       <ul>
         <li>
@@ -25,8 +37,12 @@
                     <li>
                       Checking after 3rd list what new style it uses to list an
                       item
+                      <p>
+                        It uses same symbol style that it uses on earlier list
+                        item square, that means after three nested list it
+                        doesn't change the symbol to something new
+                      </p>
                     </li>
-                    <!-- it uses same symbol style that it uses on earlier list item square, that means after three nested list it doesn't change the symbol to something new  -->
                   </ul>
                 </li>
               </ul>
@@ -41,6 +57,63 @@
         <li>Tailwind</li>
         <li>JavaScript</li>
       </ul>
+    </section>
+    <hr>
+    <h1>Ordered List Below:</h1>
+    <p>
+      By default, the 'decimal' value will be set to the CSS property. We can
+      also have 'none' value for the "list-style-type" property if we do not need
+      any bullets to be present in the list.
+    </p>
+    <section>
+      <h2>Tech Stack</h2>
+      <ol>
+        <li>
+          Web Devlopment
+          <ol style="list-style-type: upper-roman">
+            <li>
+              React
+              <ol style="list-style-type: lower-latin">
+                <li>JavaScript Mastery</li>
+              </ol>
+            </li>
+            <li>Html and Css
+                <ol  type="a" >
+                    <li>Static Website</li>
+                    <li>sfaf</li>
+                    <li>lond</li>
+                    <li>really</li>
+                    <li>boom</li>
+                    <li>crazy</li>
+                </ol>
+            </li>
+
+          </ol>
+        </li>
+      </ol>
+    </section>
+    <hr>
+    <section>
+        <h2>Description List Below:</h2>
+        <dl>
+            <h3>Basic Defination of web languages</h3>
+            <dt>Html:</dt>
+            <dd>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.</dd>
+
+            <dt>Css:</dt>
+            <dd>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.</dd>
+
+            <dt>JavaScript:</dt>
+            <dd>JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.</dd>
+        </dl>
+    </section>
+    <hr>
+    <section>
+        <h2>Quotation and Citation Element</h2>
+        <p>Blockquote Element below</p>
+        <blockquote cite = "https://owasp.org/"">
+            The Open Web Application Security Project® (OWASP) is a nonprofit foundation that works to improve the security of software.
+        </blockquote>
     </section>
   </body>
 </html>
