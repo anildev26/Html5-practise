@@ -55,69 +55,390 @@ The table below lists the various types of input elements.
     <title>Form Elements</title>
 </head>
 <body>
-    <ol>
-        <li>Input type - text: 
-            <ul>
-                <li>A single-line text field. The value attribute defines the value of the input field.</li>
-                <li>Name: <input type="text" value=""></li>
-            </ul>
-        </li>
+    <h2 style="text-align: center;"><u>Form Elements</u></h2>
+    <form action="#">
+        <ol>
+            <li>Input type - text: 
+                <ul>
+                    <li>A single-line text field. The value attribute defines the value of the input field.</li>
+                    <li>Name: <input type="text" value=""></li>
+                </ul>
+            </li>
 
-        <li>Input type - password: 
-            <ul>
-                <li>An input field can be used to enter a password.</li>
-                <li>Password: <input type="password"></li>
-            </ul>
-        </li>
-        
-        <li>Input type - email: 
-            <ul>
-                <li>An input field that accepts email addresses. </li>
-                <li>It has in-built validation for an email.</li>
-                <li>Email-id: <input type="email"></li>
-            </ul>
-        </li>
+            <li>Input type - password: 
+                <ul>
+                    <li>An input field can be used to enter a password.</li>
+                    <li>Password: <input type="password"></li>
+                </ul>
+            </li>
+            
+            <li>Input type - email: 
+                <ul>
+                    <li>An input field that accepts email addresses. </li>
+                    <li>It has in-built validation for an email.</li>
+                    <li>Email-id: <input type="email"></li>
+                </ul>
+            </li>
 
-        <li>Input type - number: 
-            <ul>
-                <li>Defines an input text box, where the user can enter only numerical input. </li>
-                <li>Gives an error on form submission if the value entered goes beyond the min and max limits and includes built-in validation to reject non-numerical values.</li>
-                <li>Attributes min and max can be used to define a boundary and step attribute value which can be used for defining the difference between consecutive numbers.</li>
-                <li>Age: <input type="number"></li>
-            </ul>
-        </li>
+            <li>Input type - number: 
+                <ul>
+                    <li>Defines an input text box, where the user can enter only numerical input. </li>
+                    <li>Gives an error on form submission if the value entered goes beyond the min and max limits and includes built-in validation to reject non-numerical values.</li>
+                    <li>Attributes min and max can be used to define a boundary and step attribute value which can be used for defining the difference between consecutive numbers.</li>
+                    <li>Age: <input type="number"></li>
+                </ul>
+            </li>
 
-        <li>Input type - checkbox:
-            <ul>
-                <li>Defines a checkbox.</li>
-                <li>The checked attribute checks that particular checkbox value.</li>
-                <li>Also, multiple checkboxes can be checked at a time.</li>
-                <li>Programming Languages: <input type="checkbox" checked>Html <input type="checkbox" checked>Css
-                    <input type="checkbox">Javascript
-                    <input type="checkbox">React
-                    <input type="checkbox">NodeJs
-                </li>
-            </ul>
-        </li>
+            <li>Input type - checkbox:
+                <ul>
+                    <li>Defines a checkbox.</li>
+                    <li>The checked attribute checks that particular checkbox value.</li>
+                    <li>Also, multiple checkboxes can be checked at a time.</li>
+                    <li>Programming Languages: <input type="checkbox" checked>Html <input type="checkbox" checked>Css
+                        <input type="checkbox">Javascript
+                        <input type="checkbox">React
+                        <input type="checkbox">NodeJs
+                    </li>
+                </ul>
+            </li>
 
-        <li>Input type - radio: 
-            <ul>
-                <li>Defines a radio button.</li>
-                <li>The name attribute specifies the associated name of that radio button.</li>
-                <li>Radio buttons in a group should have the same name.</li>
-                <li>It is necessary to write "name" attribute in radio input type so user can only choose 1 option from mentioned Radio buttons</li>
-                <li>Gender: <input type="radio" name="gender" value="male" >Male 
-                    <input type="radio" name="gender" value="female">Female</li>
-            </ul>
-        </li>
+            <li>Input type - radio: 
+                <ul>
+                    <li>Defines a radio button.</li>
+                    <li>The name attribute specifies the associated name of that radio button.</li>
+                    <li>Radio buttons in a group should have the same name.</li>
+                    <li>It is necessary to write "name" attribute in radio input type so user can only choose 1 option from mentioned Radio buttons</li>
+                    <li>Gender: <input type="radio" name="gender" value="male" >Male 
+                        <input type="radio" name="gender" value="female">Female</li>
+                </ul>
+            </li>
 
-        <li>Input type - file: 
-            <ul>
-                <li>Creates a control to upload a file to the server</li>
-                <li>Upload a file: <input type="file"></li>
-            </ul>
-        </li>
-    </ol>
+            <li>Input type - file: 
+                <ul>
+                    <li>Creates a control to upload a file to the server</li>
+                    <li>Upload a file: <input type="file"></li>
+                </ul>
+            </li>
+
+            <li> button  element:
+                <ul>
+                    <li>The button can be of 3 types:
+                        <ol>
+                            <li>submit (default with &lt;button&gt; tag)</li>
+                            <li>reset (to reset the form)</li>
+                            <li>button (just a clickable button)</li>
+                        </ol>
+                    </li>
+                    <li><button type="submit">Submit your data</li>
+                    <li><button type="reset">Reset form</li>
+                    <li><button type="button">Normal button</button></li>
+                </ul>
+            </li>
+            <li>Input type - URL: 
+                <ul>
+                    <li>Defines a text input that can capture any input value starting with http:// or https://. If there is a pattern mismatch, it shows an error on form submission.</li>
+                    <li>Enter the website url:<input type="url"></li>
+                </ul>
+            </li>
+
+            <li>&lt;textarea&gt; element: 
+                <ul>
+                    <li>Defines a multi-line text field.</li>
+                    <li>It is <em>not possible to set a default text using the value attribute</em>. Hence, default text can be placed inside "textaread" tag <textarea>--default value--</textarea> tag.</li>
+                    <li>Write your opinion here: <textarea cols="25" rows="0">Write Below:</textarea></li>
+                </ul>
+            </li>
+
+            <li>Input type: Hidden:
+                <ul>
+                    <li>You may want to submit supplementary data (such as users' language of user input) to the server, without any user interaction.</li>
+                    <li>This can be done using a hidden element.</li>
+                    <li><strong>Its Hidden on below line:</strong> Syntax: &lt;input type="hidden" name="language" value="English" /&gt;</li>
+                    <li><input type="hidden" name="language" value="English" /></li>
+                    <li><em>Note: Output may vary for some input fields according to the browser</em></li>
+                </ul>
+            </li>
+            <hr>
+            <li>Label:
+                <ul>
+                    <li>The <label> element is used to associate a text label with a form &lt;input&gt; field. The label is used to tell users the value that should be entered in the associated input field.</li>
+                    <li>Additionally, the "for" attribute of the label can point to the "id" of input control. This ensures the cursor focuses on the respective input control on the click of the label.</li>
+                    <li>It also enhances the usability, by allowing the user to toggle the control by clicking on text written within &lt;label&gt;…&lt;/label&gt; tag.</li> 
+                    <li>Example: 
+                        <ul>
+                            <li>&lt;label for="username">Enter Username&lt;/label&gt;</li>
+                            <li>&lt;input type="text" id="username" /&gt;</li>
+                        </ul>
+                    <li>for="username" in label refers to "id" attribute of an input element</li>
+                    </li>
+                </ul>
+            </li>
+            <hr>
+            <h3 style="text-align: center;">Color and Date Picker</h3>
+            <p style="text-align: center;">We have various picker-elements in HTML forms such as color-picker and date-picker elements. </p>
+            <li>Input type - color: 
+                <ul>
+                    <li>Defines a color picker.</li>
+                    <li>Choose a color:<input type="color" ></li>
+                </ul>
+            </li>
+
+            <li> Input type - date: 
+                <ul>
+                    <li>Creates a date-picker which is used to collect dates.</li>
+                    <li>Date of Birth:<input type="date"></li>
+                </ul>
+            </li>
+
+            <li> Input type – datetime-local:
+                <ul>
+                    <li>Defines a date-time picker, where the user can pick a date as well as time</li>
+                    <li>Choose a date and time: <input type="datetime-local"/></li>
+                </ul>
+            </li>
+
+            <li> Input type – week:  
+                <ul>
+                    <li>Defines a date picker, where the user can pick a week. </li>
+                    <li>Select a week: <input type="week"/></li>
+                </ul>
+            </li>
+
+            <li> Input type – month: 
+                <ul>
+                    <li>Defines a date picker, where the user can pick a month.  </li>
+                    <li>Select a month: <input type="month"/></li>
+                </ul>
+            </li>
+            <hr>
+            <h3 style="text-align: center;">Select and Datalist Elements</h3>
+            <p style="text-align: center;">We have &lt;select&gt; and &lt;datalist&gt; elements in HTML which helps to collect input data from user as a drop-downs.</p>
+
+            <li>&lt;select&gt; element : 
+                <ul>
+                    <li>Defines a drop-down list.</li>
+                    <li>The "multiple" attribute can be used for having a multi-select dropdown menu.</li>
+                    <li>Country Code: <select name="countrycode" id="countrycode">
+                        <option value="">--Please choose a country code--</option>
+                        <option value="+91">+91</option>
+                        <option value="+213">+213</option>
+                        <option value="+244">+244</option>
+                        <option value="+61">+61</option>
+                        <option value="+973">+973</option>
+                    </select></li>
+                </ul>
+            </li>
+
+            <li>&lt;datalist&gt; element :
+                <ul>
+                    <li>Defines a set of pre-defined options available to choose for an <input> element.</li>
+                    <li>In the below example list attribute holds lists of possible options, the value assigned to the list attribute of the input element and id attribute of datalist attribute should be the same and the value sent to the server should be assigned to the option element value attribute. </li>
+                    <li><strong><em>
+                        Note: &lt;select&gt; allows the user to select from some pre-defined options.
+                        Whereas, for the &lt;datalist&gt; element, even though it is suggested to select from the given options, the user can actually enter the data to the input field as any other input field
+                    </strong>
+                    </em>
+                    </li>
+                    <li>Country: <input list="countries"></li>
+                    <datalist id="countries">
+                        <option value="India">
+                            <option value="France">
+                                <option value="Singapore">
+                                    <option value="Thailand">
+                                        <option value="United Arab Emirates">
+                                            <option value="United States of America">
+                    </datalist>
+                </ul>
+            </li>
+            <hr>
+            <h3 style="text-align: center;">Other Form Elements</h3>
+            <p style="text-align: center;">Let us see some other input elements in HTML where the data can be collected from the user as a slider.</p>
+            <li>Input type – range: 
+                <ul>
+                    <li>Defines a range slider, where the user can select input.</li>
+                    <li>Volume: <input type="range"/></li>
+                </ul>
+            </li>
+
+            <li>Meter: 
+                <ul>
+                    <li>Can be used to represent a scalar measurement within a known range.</li>
+                    <li>Disk Usage: <meter min="0" max="100" value="70"></meter></li>
+                </ul>
+            </li>
+
+            <li>Progress
+                <ul>
+                    <li>Can be used to represent the progress of a task.</li>
+                    <li><em>Note: &lt;progress&gt; can be used to mark up the completion rate/degree of progress of an "in progress" task through a progress bar.</em></li>
+                    <li>Task Completed: <progress min="0" max="100" value="20"></progress></li>
+                </ul>
+            </li>
+        </ol>
     
+    </form>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<hr>
+    <h2>Exercise:</h2>
+    <form>
+        <h4>Register for Online Trainings</h4>
+
+        <!-- input fields types text/password/email/number  -->
+        Username:<input type="text"/> <br/>
+        Password:<input type="password"/> <br/>
+        Contact:<input type="number"/> <br/>
+        Email: <input type="email"/><br/><br/>
+
+        Remark: <textarea cols="5"></textarea> <br />
+        <!-- input fields type checkbox -->
+        Select technologies needed: 
+        <input type="checkbox" value="HTML" checked /> HTML
+        <input type="checkbox" value="CSS"/> CSS 
+        <input type="checkbox" value="JS"/> JS<br/><br/>
+
+        <!-- input field type radio button -->
+        Select training mode: 
+        <input type="radio" name="training" value="classroom" checked /> Classroom
+        <input type="radio" name="training" value="VCR" /> VCR <br/>
+
+        <!-- input field type hidden -->
+        <input type="hidden" name="language" value="english" /> <br/><br/>
+        
+        Enter the URL of the certified training if any: <input type="url" /> <br/> 
+        Upload e-certificate : <input type="file"/><br/><br/>
+
+        <!-- input field type button -->
+        <input type="button" value="Click here to see the available trainings"/> &nbsp;&nbsp;
+        <!-- input field type submit -->
+        <input type="submit"/> &nbsp;&nbsp; <input type="reset"/>
+
+    </form>
+<hr>
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <h2>Exercise 2:</h2>
+    <form>
+        <!-- 
+        Activities:-->
+        <p>Click on the label "Firstname" which focuses on the corresponding text box.</p>
+        <p>Click on the "Lastname" field and observe the difference in focus.</p>
+        <p>Modify the "Lastname" field in such a way that it focuses the corresponding text box on click. </p>
+
+        <label for="firstname">Firstname:</label>
+        <input type="text" id="firstname" />
+        
+        Lastname: <input type="text" id="lastname" />
+
+        <!-- Soltuion -->
+        <!-- <label for="lastname">Lastname:</label> -->
+    </form>
+<hr>
+    <h2>Exercise 3:</h2>
+    <form>
+        <h4>Color and Date Pickers -Tryout</h4>
+        <!-- input type color picker -->
+        Select your favorite color: <input type="color"/>
+        <br/> <br/>
+        <!-- input date picker   -->
+        Select your DOB with time: <input type="datetime-local"/>
+
+        <br/><br/>
+        Select your DOB month: <input type="month"/>
+
+        <br/><br/>
+        Select your DOB week: <input type="week"/>
+        
+    </form> 
+<hr>
+    <h2>Exercise 4:</h2>
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <form>
+        <h4>Selecting Input Values from Dropdown</h4>
+        <!-- When the input is collected over select dropdown,
+         the user needs to select an option from the dropdown provided -->
+        Select Technology for appearing the Certification:
+        <select>
+            <option value="HTML">HTML </option>
+            <option value="CSS">CSS </option>
+            <option value="JS">JS </option>
+            <option value="WD" selected>Web Developer </option>                
+        </select>  <br/> <br/>
+        
+        <!-- When the input is collected through datalist, user can choose the vlue from the option list,
+             or they can provide their own input through the input field -->
+        Choose Technology for appearing the Certification :<input list="Technologies" />
+        <datalist id="Technologies">
+            <option value="HTML">HTML </option>
+            <option value="CSS">CSS </option>
+            <option value="JS">JS </option>
+            <option value="MERN">Mern Stack</option>    
+            <option value="WD" selected>Web Developer </option>         
+        </datalist> <br><br>
+        <input type="submit">
+    </form>
+<hr>
+    <h2>Exercise 5:</h2>
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <form action="#" oninput="result.value = parseInt(num1.value)+parseInt(num2.value)">
+        <h4>Displays the output of user input.</h4>
+
+        <label for="num1">Number 1:</label>
+        <input type="number" id="num1" value=""/> +
+
+        <label for="num2">Number 2:</label>
+        <input type="number" id="num2" value=""/> =
+
+        <output name="result" for="num1 num2"></output>
+    </form>
+<hr>
+    <h2>Try out 1:</h2>
+    <!-- --------------------------------------------------------------------------------------------------- -->
+    <form action="#" oninput="result.value = parseInt(user_experience.value)">
+        <p>Slide over the range input and observe that value of the slider is displayed in the output control.</p>
+        Rate your Experience: <input type="range" id="user_experience" min="0" max="100" />
+        <output name="result" for="user_experience"></output>
+
+    </form>
+<hr>
+    <h2 style="text-align: center;">Exercise 6:</h2>
+    <header>
+        <h1>Sign Up!</h1> <br>
+    </header>
+    <article>
+        <form action="#">
+                <label for="username">Username: </label>
+                <input type="text" id="username" value=""/><br><br>
+
+                <label for="password">Password: </label>
+                <input type="password" id="password" value=""/><br><br>
+
+                <label for="gender">Gender: </label>
+                Male<input type="radio" value="male" name="gender">
+                Female <input type="radio" value="female" name="gender"><br><br>
+
+                <label for="dob">DOB: </label>
+                <input type="date" name="dob" id="dob"><br><br>
+
+                <label for="phone_num">Phone number:</label>
+                <input type="number" id="phone_num" max="10" value=""/> <br><br>
+
+                <label for="email">Email ID: </label>
+                <input type="email" id="email" value=""/><br><br>
+
+                <label for="languages">Languages Known:</label>
+                <input type="checkbox" checked>English
+                <input type="checkbox" >Hindi
+                <input type="checkbox" >French <br><br>
+
+                <label for="profile">Profile pic:</label>
+                <input type="file" id="profile"><br><br><br>
+
+                <input type="submit" value="Register"> &nbsp;&nbsp; <input type="reset" value="reset">
+        </form>
+        <br /> <br /> <br /> <br /> 
+    </article>
+    <footer>
+        <nav> About Us | Privacy Policy | Contact Us | FAQ | Terms & Conditions </nav> Copyright &copy; 2018 | Giri
+    </footer>
+    <aside> Like and Connect with us FB Twitter g+ </aside>
 </body>
-</html>
+</html> 
