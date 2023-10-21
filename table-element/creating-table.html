@@ -1,0 +1,274 @@
+<!-- 
+The table element is defined in HTML using <table>...</table> tag
+It contains table header and table body.
+
+    Element             	Description
+    -------------------------------------------------------------------------------
+    caption	                Defines table heading
+    tr	                    Defines row of the table
+    th	                    Defines heading of the column
+    td	                    Defines data of column
+    thead	                Defines header part of the table
+    tbody	                Defines the content part of the table
+    colgroup	            Helps to logically group two or more consecutive columns
+    -------------------------------------------------------------------------------
+The elements <td > and <th>  supports the attributes namely colspan and rowspan which helps to merge the table cells accordingly.
+
+The colspan attribute accepts a numeric value and merges specified numeric value of columns together whereas, the rowspan attribute accepts a numeric value and merges specified numeric value of rows together.
+
+Consider the below table with 4 rows and 4 columns.
+For example, if we provide colspan attribute with a value 2, then 2 columns of the table will be merged as shown below:
+
+And, if we provide rowspan attribute with a value 2, then 2 rows of the table will be merged as shown below:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Table</title>
+</head>
+<style>
+    /* table, th, td {
+      border: 1px solid black;
+    } */
+    </style>
+<body>
+    <h2 style="text-align: center;"><mark>Creating Html Tables</mark></h2>
+    <hr>
+    <table border="1" style="border-collapse: collapse;">
+        <caption>Mere Bete</caption>
+        <colgroup>
+        <col style="background-color: lightskyblue;">
+        <col style="background-color: lightsalmon;">
+        <col style="background-color: lightgoldenrodyellow;">
+        <col style="background-color: lightsteelblue;">
+
+        </colgroup>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email Address</th>
+                <th>Nickname</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Anil</td>
+                <td>Sahu</td>
+                <td>anilsahudev26@gmail.com</td>
+                <td>Ace</td>
+            </tr>
+
+            <tr>
+                <td>Rhishikesh</td>
+                <td>Chaughule</td>
+                <td>rhishikeshchaughule@gmail.com</td>
+                <td>Saheb</td>
+            </tr>
+            <tr>
+                <td>Vinayak</td>
+                <td>Kapale</td>
+                <td>vinayakkapale18@gmail.com</td>
+                <td>Babu</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 
+    In the above-mentioned code we can observe that: 
+
+        The <table> element encloses all the other table elements in it.
+
+        The optional <thead> and <tbody> elements helps us to logically divide the table content.
+
+        The <th> element is used to define the column heading.
+
+        The <tr> element creates a new row.
+
+        The <td> element creates a new table column.
+     -->
+     <hr>
+
+<!-- ----------------------------------------------------------------------------------- -->
+
+    <table border="1" style="border-collapse:collapse">
+        <caption>Mern Stack developer program</caption>
+        <colgroup>
+        <col style="color: aliceblue; background-color: lightgrey;">
+        <col style="background-color: lightblue;">
+        <col span="2" style="background-color: lightgreen;">
+        <col style="background-color: lightpink;">
+        </colgroup>
+
+        <tr>
+            <th>Technology</th>
+            <td>MongoDb </td>
+            <td>Node </td>
+            <td>Express </td>
+            <td>React</td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td>Database</td>
+            <td>Node is the base for server-side scripting</td>
+            <td>Js framework for web server development</td>
+            <td>Js library to design the frontend</td>
+        </tr>
+    </table>
+    <hr>
+
+<!-- ----------------------------------------------------------------------------------- -->
+
+
+    <table border="1" style="border-collapse:collapse;">
+        <caption>Team Details</caption>
+        <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>Emp ID</th>
+            <th>Location</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>John</td>
+            <td>102342</td>
+            <td>Banglore</td>
+        </tr>
+        <tr>
+            <td>Joseph</td>
+            <td>890234</td>
+            <td>Pune</td>
+        </tr>           
+         <tr>
+            <td>Sam</td>
+            <td>102342</td>
+            <td>Mysore</td>
+        </tr>
+        </tbody>
+    </table>
+    <hr>
+<!-- ----------------------------------------------------------------------------------- -->
+    <h2>Table Colspan testing:</h2>
+    <table border="2" style="border-collapse:collapse">
+        <caption>Person Details</caption>
+        <colgroup>
+            <col span="2" style="background-color: bisque;">
+            
+            <col style="background-color: lightgreen;">
+            
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="2">Full Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Anil</th>
+                <th>Sahu</th>
+                <th>23</th>
+            </tr>
+            <tr>
+                <th>Rhishi</th>
+                <th>Chaughule</th>
+                <th>22</th>
+            </tr>
+            <tr>
+                <th>Vinayak</th>
+                <th>Kapale</th>
+                <th>23</th>
+            </tr>
+        </tbody>
+        <hr>      
+    </table>
+<!-- ----------------------------------------------------------------------------------- -->
+    <h2>Table Rowspan testing:</h2>
+    <table border="2" style="border-collapse:collapse">
+        <colgroup>
+        <col style="background-color: rgb(132, 207, 61);">
+        <col style="background-color:rgb(235, 125, 125);">
+        </colgroup>
+        <tr>
+            <th>Name</th>
+            <td>Anil</td>
+        </tr>
+        <tr>
+            <th rowspan="2">phone</th>
+            <td>9082146640</td>
+        </tr>
+        <tr>
+            <td>8369300068</td>
+        </tr>
+    </table>
+    <hr>
+<!-- ----------------------------------------------------------------------------------- -->
+    <h2>Both colspan and rowspan:</h2>
+    <table border="2">
+        <thead>
+            <tr>
+                <th colspan="2">Employee Details:</th>
+                <th>Training Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Oct'20</td>
+                <td>Jacob, #1002</td>
+                <td>Completed</td>
+            </tr>
+            <tr>
+                <td>Jeenie, #3001</td>
+                <td>In progress</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+<!-- ----------------------------------------------------------------------------------- -->
+    <h2>Exercise:</h2>
+    <table border="1">
+        <caption>Mobile Inventories Available at Hussain's Shopping!</caption>
+         <!-- Design the table here -->
+         <thead>
+            <tr>
+                <th rowspan="2">Product Name</th>
+                <th colspan="2">Product Details</th>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <th>Description</th>
+            </tr>
+         </thead>
+         <tbody>
+            <tr>
+                <td>Asus Zenfone</td>
+                <td>11599</td>
+                <td>an economical phone by Asus</td>
+            </tr>
+            <tr>
+                <td>Redmi Note 2</td>
+                <td>8599</td>
+                <td>an economical phone by Xiaomi</td>
+            </tr>
+            <tr>
+                <td>Moto G turbo</td>
+                <td>8599</td>
+                <td>an economical phone by Moto</td>
+            </tr>
+            <tr>
+                <td>Lenovo Vibe X3Lenovo Vibe X3</td>
+                <td>19999</td>
+                <td>a high end phone by Lenovo</td>
+            </tr>
+            <tr>
+                <td>iphone 8 plus</td>
+                <td>19999</td>
+                <td>a high end phone by Apple</td>
+            </tr>
+         </tbody>
+    </table>
+</body>
+</html>
