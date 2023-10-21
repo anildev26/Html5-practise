@@ -1,0 +1,90 @@
+<!-- 
+--------------------Text-Level Semantic Elements-------------------
+The table below lists widely used text-level semantic elements supported in HTML5.:
+
+Element	        Description
+----------------------------------------------------------------------------------------------
+abbr	        Defines abbreviation or acronym
+q	            Represents text quoted from another source by adding quotation mark (" ")
+small	        Displays text in relatively smaller font-size
+mark	        Highlights text
+strong	        Displays text in bold
+em	            Displays text in the italic or emphasized format
+sub	            Displays text as subscript
+sup	            Displays text as superscript
+span	        Provides styling to text
+br	            Breaks line of text
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Level Semantic Elements</title>
+</head>
+<body>
+    <dl>The "strong" element:</dl>
+    <dd>Make the text appear bolder</dd>
+    <dd>Ex: Matthew Charles Berry is an <strong>English actor, comedian, musician, and writer</strong>. He has appeared in comedy <mark>TV roles</mark> in The IT Crowd</dd>
+    <hr>
+
+    <dl>The "mark" element:</dl>
+    <dd>Highlighted text like the way we do in a paper using a highlighter</dd>
+    <dd>Ex: He has appeared in comedy <mark>TV roles</mark> in The IT Crowd</dd>
+    <hr>
+
+    <dl>The "sup" element:</dl>
+    <dd>Display text in upper side of the line(uppar)</dd>
+    <dd>Example: Example of <sup>superscripted</sup> text.</dd>
+    <dd>Another Ex: a <sup>2</sup> +  b <sup>2</sup> </dd>
+    <hr>
+
+    <dl>The "sub" element:</dl>
+    <dd>Display text in downside of the line (neche)</dd>
+    <dd>Example: Example of <sub>subscripted</sub> text.</dd>   
+    <dd>Another Ex: H <sub>2</sub> O</dd>
+    <hr>
+
+    <dl>The "em" element:</dl>
+    <dd>Emphasize text (Italic krdeta hai)</dd>
+    <dd>Example: <em>Text emphasized</em></dd>
+    <hr>
+
+    <dl>The "small" element:</dl>
+    <dd>Display text in relatively smaller font</dd>
+    <dd><p>Text <small>Small</small> in HTML</p></dd>
+    <hr>
+
+    <dl>The "del" element:</dl>
+    <dd>Strikethrough text (kat deta hai vo word ya sentence ko)</dd>
+    <dd>This is <del>deleted</del> content.</dd>
+    <hr>
+
+    <p><mark>Note:  The "sup" and "sub" elements can be replaced by the CSS property "vertical-align" especially while designing a logo of a product or a business that uses a raised baseline.</mark></p>
+    <!-- ------------------------------------------------------------------------------------------------ -->
+
+    <h2>Excercise Below:</h2>
+    <header>
+        <nav> 
+            <a href="Login.html"> Login </a> | <a href="Signup.html"> SignUp </a> |<a href="TrackOrder.html"> Track order </a>
+        </nav>
+        <h1>Welcome to Hussain's Shopping</h1>
+        <nav>
+            <a href="#Clothing"> Clothing </a> | <a href="#Media"> Media </a>
+        </nav>
+    </header>
+    <article> Hussain & Co very own one-stop solution for all your shopping needs !  
+        <br /> 
+        Dont believe us? Click on the offers
+        and check it out for yourself !! 
+        <h2 id="Clothing"> Clothing </h2>
+        <h2 id="Media"> Media </h2>
+    </article>
+    <footer>
+        <nav> About Us | Privacy Policy | Contact Us | FAQ | Terms & Conditions </nav> Copyright
+        &copy;2018 | Giri
+    </footer>
+    <aside> Like and Connect with us <abbr title="Facebook">FB</abbr> Twitter <abbr title="Goggle +">g+</abbr> </aside>
+</body>
+</html>
