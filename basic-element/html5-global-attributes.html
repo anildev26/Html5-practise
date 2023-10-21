@@ -1,0 +1,96 @@
+<!-- 
+Attributes that can be used with all HTML elements are called "Global attributes".
+The table below lists a few global attributes supported in HTML5.
+
+    Attribute	                            Description
+    contenteditable	                        Allows the user to edit content. Possible values are true/false.
+    dir	Specifies                           text direction(modifies the text direction of the <p> element from right to left orientation.). Possible values are ltr/ rtl.
+    title	                                Displays the string message as a tooltip.
+    spellcheck	                            Specifies whether the spelling of an element's value should be checked or not. Possible values are true/false. [Works with contentEditable]
+    id	                                    Gives a unique id to an element.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 5 Global Attributes</title>
+</head>
+<body>
+    <p contenteditable="true" spellcheck="true"> <mark>Content Editable = True</mark> (Click on me to edit the text) <br> Note: The "sup" and "sub" elments can be replaced by the CSS property "vertical-align" especially while designing a logo of a product or a business that uses a raised baseline edditable.</p>
+    <p dir="rtl">Episode 7 Act 3 is going to be the biggest one we've seen this year. The addition of the new agent Iso, known as Agent 24, is a much-needed tweak to the current stale meta. And honestly, he seems incredibly broken.</p>
+    <p title="mydemo">Hover your mouse here to see the title</p>
+    <p id="id1">ID should be unoque for each element</p>
+
+    <!-- -------------------------------------------------------------------------------------------------------- -->
+    <h2>Exercise:</h2>
+    <hr>
+    <header>
+        <h1>Sign Up!</h1>
+    </header>
+    <article>
+        <form action="success.html" method="get">
+            <table>
+                <tr>
+                    <td><br><label for="username">Username:</label></td>
+                    <td><br><input type="text" id="username" placeholder="Enter your username" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="email_id">Email ID:</label></td>
+                    <td><input type="email" id="email_id" placeholder="Enter your email ID" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" placeholder="Enter your password" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td><label for="male">Male<input type="radio" id="male" name="gender" value="M" />&nbsp; <label for="female">Female<input
+                                type="radio" id="female" name="gender" value="F" /></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">DOB:</label></td>
+                    <td><input type="date" id="dob" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="phone_no">Phone number:</label></td>
+                    <td><input type="text" id="phone_no" placeholder="Enter your contact number" pattern="+ [0-9] {12}" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td><select id="country" placeholder="Select your country">
+                            <option value="India" />India
+                            <option value="India" />USA
+                            <option value="India" />UK
+                            <option value="India" />Canada
+                            <option value="India" />Belgium
+                            <option value="India" />France </select></td>
+                </tr>
+                <tr>
+                    <td><label id="language">Languages Known:</label></td>
+                    <td><input type="checkbox" name="language" id="english" value="English" checked="checked" /><label for="english">
+                            English </label> <input type="checkbox" name="language" id="hindi" value="Hindi" /><label for="hindi"> Hindi
+                        </label> <input type="checkbox" name="language" id="french" value="French" /><label for="french"> French </label></td>
+                </tr>
+                <tr>
+                    <td><label for="pic">Profile pic:</label></td>
+                    <td><input type="file" id="pic" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="yourself" dir="ltr">About yourself:</label></td>
+                    <td><textarea contenteditable="true" spellcheck="true"></textarea></td> <!-- Add contenteditable and spellcheck attribute -->
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Register" />
+                    <td><input type="reset" value="Reset" />
+                </tr>
+            </table>
+        </form> <br /> <br /> <br /> <br />
+    </article>
+    <footer>
+        <nav> About Us | Privacy Policy | Contact Us | FAQ | Terms & Conditions </nav> Copyright &copy; 2018 | Giri
+    </footer>
+    <aside> Like and Connect with us FB Twitter g+ </aside>
+</body>
+</html> 
