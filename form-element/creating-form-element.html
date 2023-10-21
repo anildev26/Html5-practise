@@ -1,0 +1,123 @@
+<!-- 
+The form can be created using <form>...</form> tag of HTML. 
+The <form> tag has the below attributes:
+
+    method: Defaults to HTTP "get" method of submission to the server. To use HTTP "post", use method="post"
+
+    action: The URL to which the form data has to be submitted
+
+    target: Specifies if the submitted result will open in the current window, a new tab, or on a new frame
+    
+        {name} - Used for accessing form 
+        data by the scripting
+        language:-
+
+Syntax: <form name= "Name of the form" action= "Link to server-side program" method= "HTTP Request Method">
+            // All form elements
+        </form>
+
+The form input element is used to collect details from the user.:
+
+Syntax: <input type="input type" value="element value">
+
+The table below lists the various types of input elements.
+    ----------------------------------------------------------
+    The possible value of "type"	        Description
+    ----------------------------------------------------------
+    text	                                Creates textbox
+    password	                            Creates textbox that accepts the only password
+    checkbox	                            Creates checkbox
+    radio	                                Creates a radio button
+    button	                                Creates button
+    submit	                                Creates a button that submits values of all form elements to the server
+    reset	                                Creates a button that resets values of all form elements to their default value
+    image	                                Creates a graphical version of a button
+    file	                                Creates control to upload the file to the server
+    hidden	                                Creates a hidden text field
+    email	                                Creates textbox that accepts only valid email id
+    number	                                Creates spinbox that accepts only whole numbers
+    range	                                Creates a range slider
+    search	                                Creates a search bar
+    URL	                                    Creates textbox that accepts only valid URL
+    color	                                Creates color picker
+    date	                                Creates date picker to select date
+    month	                                Creates date picker to select a month
+    week	                                Creates date picker to select week
+         
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elements</title>
+</head>
+<body>
+    <ol>
+        <li>Input type - text: 
+            <ul>
+                <li>A single-line text field. The value attribute defines the value of the input field.</li>
+                <li>Name: <input type="text" value=""></li>
+            </ul>
+        </li>
+
+        <li>Input type - password: 
+            <ul>
+                <li>An input field can be used to enter a password.</li>
+                <li>Password: <input type="password"></li>
+            </ul>
+        </li>
+        
+        <li>Input type - email: 
+            <ul>
+                <li>An input field that accepts email addresses. </li>
+                <li>It has in-built validation for an email.</li>
+                <li>Email-id: <input type="email"></li>
+            </ul>
+        </li>
+
+        <li>Input type - number: 
+            <ul>
+                <li>Defines an input text box, where the user can enter only numerical input. </li>
+                <li>Gives an error on form submission if the value entered goes beyond the min and max limits and includes built-in validation to reject non-numerical values.</li>
+                <li>Attributes min and max can be used to define a boundary and step attribute value which can be used for defining the difference between consecutive numbers.</li>
+                <li>Age: <input type="number"></li>
+            </ul>
+        </li>
+
+        <li>Input type - checkbox:
+            <ul>
+                <li>Defines a checkbox.</li>
+                <li>The checked attribute checks that particular checkbox value.</li>
+                <li>Also, multiple checkboxes can be checked at a time.</li>
+                <li>Programming Languages: <input type="checkbox" checked>Html <input type="checkbox" checked>Css
+                    <input type="checkbox">Javascript
+                    <input type="checkbox">React
+                    <input type="checkbox">NodeJs
+                </li>
+            </ul>
+        </li>
+
+        <li>Input type - radio: 
+            <ul>
+                <li>Defines a radio button.</li>
+                <li>The name attribute specifies the associated name of that radio button.</li>
+                <li>Radio buttons in a group should have the same name.</li>
+                <li>It is necessary to write "name" attribute in radio input type so user can only choose 1 option from mentioned Radio buttons</li>
+                <li>Gender: <input type="radio" name="gender" value="male" >Male 
+                    <input type="radio" name="gender" value="female">Female</li>
+            </ul>
+        </li>
+
+        <li>Input type - file: 
+            <ul>
+                <li>Creates a control to upload a file to the server</li>
+                <li>Upload a file: <input type="file"></li>
+            </ul>
+        </li>
+    </ol>
+    
+</body>
+</html>
