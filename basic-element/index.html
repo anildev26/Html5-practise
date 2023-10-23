@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>HTML Projects</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+      }
+
+      .container {
+        text-align: center;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: 32px;
+        margin: 20px 0;
+      }
+
+      .project-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 0 auto 20px;
+        padding: 20px;
+        transition: transform 0.2s;
+        max-width: 800px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .project-link {
+        display: inline-block;
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+
+      .project-link span {
+        margin-left: 5px;
+      }
+
+      .project-title {
+        flex: 1;
+      }
+
+      @media (max-width: 768px) {
+        .project-card {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .project-link {
+          margin-top: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="animate_animated animate_fadeIn">Basic HTML Elements</h1>
+      <div class="card-container">
+        <div class="project-card animate_animated animate_fadeIn">
+          <div class="project-title">
+            <h2>Metadata</h2>
+          </div>
+          <a href="metadata.html" class="project-link">
+            Open<span>&rarr;</span>
+          </a>
+        </div>
+        <div class="project-card animate_animated animate_fadeIn">
+          <div class="project-title">
+            <h2>Sectioning</h2>
+          </div>
+          <a href="sectioning.html" class="project-link">
+            Open <span>&rarr;</span>
+          </a>
+        </div>
+        <div class="project-card animate_animated animate_fadeIn">
+          <div class="project-title">
+            <h2>Hyperlinks</h2>
+          </div>
+          <a href="hyperlinks.html" class="project-link">
+            Open <span>&rarr;</span>
+          </a>
+        </div>
+        <div class="project-card animate_animated animate_fadeIn">
+          <div class="project-title">
+            <h2>List Element</h2>
+          </div>
+          <a href="lists-element.html" class="project-link">
+            Open <span>&rarr;</span>
+          </a>
+        </div>
+        <div class="project-card animate_animated animate_fadeIn">
+          <div class="project-title">
+            <h2>Text Level Semantic</h2>
+          </div>
+          <a href="text-level-semantic.html" class="project-link">
+            Open <span>&rarr;</span>
+          </a>
+        </div>
+        <div class="project-card animate_animated animate_fadeIn">
+          <div class="project-title">
+            <h2>HTML5 Global Attributes</h2>
+          </div>
+          <a href="html5-global-attributes.html" class="project-link">
+            Open <span>&rarr;</span>
+          </a>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </body>
+</html>
