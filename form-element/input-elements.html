@@ -31,16 +31,16 @@ The following are some of the attributes which can be used with HTML input eleme
             <li>The placeholder attribute specifies a value that appears in the textbox as below:</li>
             <li>First name: <input type="text" placeholder="Enter your first name"/></li>
         </ul>
-    </li>
+    </li><br>
     
     <li>Pattern:
         <ul>
             <li>The pattern attribute creates a custom pattern validator.</li>
             <li>The value entered by the user is checked for validity against a specified pattern.</li>
             <li>If the user input value does not match with a specified pattern, an error message appears.</li>
-            <li>Username: <input type="text" pattern="[A-Za-z]" /></li>
+            <li>Username: <input type="text" pattern="[A-Za-z]" placeholder="Pattern defined" /></li>
         </ul>
-    </li>
+    </li><br>
 
     <li>Min, Max, and Step::
         <ul>
@@ -52,7 +52,7 @@ The following are some of the attributes which can be used with HTML input eleme
             </ol>
             <li>Job experience: <input type="number" min="2" max="10" step="1"/> </li>
         </ul>
-    </li>
+    </li><br>
 
     <li>Required:
         <ul>
@@ -61,7 +61,7 @@ The following are some of the attributes which can be used with HTML input eleme
             <li>Username: <input type="text" placeholder="Enter your username" required></li>
             <li>Password: <input type="password" required></li>
         </ul>
-    </li>
+    </li><br>
 
     <li>Multiple:
         <ul>
@@ -72,41 +72,89 @@ The following are some of the attributes which can be used with HTML input eleme
     <hr>
 
     <h2 style="text-align: center;">Form Override Attributes</h2>
-    <p style="text-align: center;">The override attributes can be used to override the form-level built-in attribute functionalities using the submit/image input elements.</p>
+    <p style="text-align: center;"><u>The override attributes can be used to override the form-level built-in attribute functionalities using the submit/image input elements.</u></p>
+    <!-- 
+    Form-override attribute	            Description
+    ------------------------------------------------------------------
+    formaction	                Overrides the form action attribute
+    formnovalidate	            Overrides the form novalidate attribute
+    formmethod	                Overrides the form method attribute
+    formtarget	                Overrides the form target attribute    
+    -->
+    <li>Formaction: 
+        <ul>
+            <li>Overrides the form action attribute.</li>
+            <li>In the below example, you can observe that the default form submission method 'GET' has been overridden to the 'POST' method due to the usage of 'formmethod' attribute in the submit input tag.</li>
+            <li>
+                <form action="#" method="get" >
+                    <input type="submit" formmethod="post">
+                </form>
+            </li>
+        </ul>
+    </li><br>
 
-    <li>Placeholder:
+    <li>Need of novalidate attribute:
         <ul>
-            <li>The placeholder attribute specifies a value that appears in the textbox as below:</li>
-            <li></li>
+            <li> Suppose we are developing a form having multiple input fields as shown below:/li>
+            <li>To test the form's functionality we may want to temporarily by-pass in-built validations done by form input type elements. This can be done by novalidate attribute.</li>
+            <li>
+                <form action="#" novalidate>
+                    Email: <input type="email">
+                    <input type="submit">
+                </form>
+            </li>
         </ul>
-    </li>
+    </li><br>
+<hr>
+    <p><u>HTML has autocomplete and autofocus attributes for the below-mentioned functionalities.</u></p>
 
-    <li>Placeholder:
+    <li>autocomplete:
         <ul>
-            <li>The placeholder attribute specifies a value that appears in the textbox as below:</li>
-            <li></li>
+            <li>It allows the browser to predict user input value.</li>
+            <li>When the user starts typing, the browser displays possible options, based on earlier typed values.</li>
+            <li>Possible values of autocomplete are on and off where the default value is "on"</li>
         </ul>
-    </li>
+    </li><br>
 
-    <li>Placeholder:
+    <li>autofocus:
         <ul>
-            <li>The placeholder attribute specifies a value that appears in the textbox as below:</li>
-            <li></li>
+            <li>Specifies that an element should automatically get focus when a web page loads.</li>
         </ul>
-    </li>
-    <li>Placeholder:
-        <ul>
-            <li>The placeholder attribute specifies a value that appears in the textbox as below:</li>
-            <li></li>
-        </ul>
-    </li>
-    <li>Placeholder:
-        <ul>
-            <li>The placeholder attribute specifies a value that appears in the textbox as below:</li>
-            <li></li>
-        </ul>
-    </li>
+    </li><br>
 
+    <li>Example for above both:
+        <ul>
+            <li>
+                Email: <input type="email" placeholder="Enter your email" autocomplete="on"><br>
+                Contact: <input type="text" pattern="[0-9]" autofocus><br>
+                <input type="submit" name="submit" id="submit">
+            </li>
+        </ul>
+    </li>
+<hr>
+
+    <li>Hidden:
+        <ul>
+            <li>In a web page, when an element is not directly relevant to the page's current state, it's a good choice to hide it.</li>
+            <li>The hidden attribute is used for this requirement.</li>
+            <li>Possible values are " " (Empty string) or hidden.</li>
+            <li><strong>Below code is Hidden:</strong></li>
+            <li><input name="language" value="English" hidden ></li>
+            <li>Sytax: &lt;input name="language" value="English" hidden&gt;</li>
+        </ul>
+    </li><br>
    </ol>
+   <hr>
+   <form method="GET" >
+    <h4>Register Here to Get Job Offer Notifications</h4>
+    Username:<input type="text"  pattern="[A-Za-z]" required autocomplete/> <br/><br/>
+    Password:<input type="password" required/> <br/><br/>
+    Email ID:<input type="email" required autofocus/> <br/><br/>
+    Contact:<input type="number" placeholder="Enter your contact number here" required/> <br/><br/>
+    Job Experience: <input type="number" min="2" max="10" step="0.5" required><br/><br/>
+    Certificates:<input type="file" required multiple /><br/><br/>
+    <input name="language" type="text" value="English" hidden>
+    <input type="submit" formmethod="POST"><br/>    
+</form>
 </body>
 </html>
