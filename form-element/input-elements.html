@@ -22,9 +22,11 @@ The following are some of the attributes which can be used with HTML input eleme
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Input Elements</title>
+    <title>Input Atributes</title>
 </head>
 <body>
+    <h2 style="text-align: center;">Some &lt;input&gt; tag attributes </h2>
+    <hr>
    <ol>
     <li>Placeholder:
         <ul>
@@ -126,7 +128,7 @@ The following are some of the attributes which can be used with HTML input eleme
         <ul>
             <li>
                 Email: <input type="email" placeholder="Enter your email" autocomplete="on"><br>
-                Contact: <input type="text" pattern="[0-9]" autofocus><br>
+                Contact: <input type="text" pattern="[0-9]" autofocus> &nbsp;<mark>Contact input tag contains "Autofocus" attribute coz of that the webpage is directly bringing you  to the autofocus marked element <strong>instead of pointing to the top of the page</strong></mark><br> 
                 <input type="submit" name="submit" id="submit">
             </li>
         </ul>
@@ -145,16 +147,16 @@ The following are some of the attributes which can be used with HTML input eleme
     </li><br>
    </ol>
    <hr>
-   <form method="GET" >
+   <form method="GET" novalidate >
     <h4>Register Here to Get Job Offer Notifications</h4>
-    Username:<input type="text"  pattern="[A-Za-z]" required autocomplete/> <br/><br/>
-    Password:<input type="password" required/> <br/><br/>
-    Email ID:<input type="email" required autofocus/> <br/><br/>
+    Username:<input type="text"  pattern="[A-Za-z]" placeholder="Enter Username" required autocomplete/> <br/><br/>
+    Password:<input type="password" placeholder="Enter Password"/> <br/><br/>
+    Email ID:<input type="email" placeholder="Enter email" autofocus required /> <br/><br/>
     Contact:<input type="number" placeholder="Enter your contact number here" required/> <br/><br/>
-    Job Experience: <input type="number" min="2" max="10" step="0.5" required><br/><br/>
-    Certificates:<input type="file" required multiple /><br/><br/>
+    Job Experience: <input type="number" min="3" max="10" step="0.5" placeholder="Enter your experience >= 3" required><br/><br/>
+    Certificates:<input type="file" required multiple placeholder="add files "/><br/><br/>
     <input name="language" type="text" value="English" hidden>
-    <input type="submit" formmethod="POST"><br/>    
+    <input type="submit" formmethod="POST" placeholder="this is button"><br/>    
 </form>
 </body>
 </html>
