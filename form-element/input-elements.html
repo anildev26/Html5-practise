@@ -159,11 +159,36 @@
             <li><input name="language" value="English" hidden ></li>
             <li>Sytax: &lt;input name="language" value="English" hidden&gt;</li>
         </ul>
-    </li><br>
+    </li>
+    <hr>
+    <h2 style="text-align: center;">Editing Elements</h2>
+    <table border="1" style="border-collapse: collapse;">
+        <p>The following are elements used for editing.</p>
+        <tr>
+            <th>del :</th>
+            <td>It defines deleted text by striking on it</td>
+            <td>Syntax :<p>HTML is building block of &lt;del&gt;Internet&lt;/del&gt;</p>
+                <td>
+                    <p>HTML is building block of <del>Internet</del></p>
+                </td>
+            </td>
+        </tr>
+        <tr>
+            <th>ins :</th>
+            <td>It defines inserted text by underlining it</td>
+            <td>Syntax :<p>HTML is building block of Internet &lt;ins&gt;WWW&lt;/ins&gt;</p>
+                <td>
+                    <p>HTML is building block of Internet <ins>WWW</ins></p>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <br>
    </ol>
    <hr>
+   <h2>Excercise 1:</h2>
    <form method="GET" novalidate >
-    <h4>Register Here to Get Job Offer Notifications</h4>
+    <h4><strong>Register Here to Get Job Offer Notifications</strong></h4>
     Username:<input type="text"  pattern="[A-Za-z]" placeholder="Enter Username" required autocomplete/> <br/><br/>
     Password:<input type="password" placeholder="Enter Password"/> <br/><br/>
     Email ID:<input type="email" placeholder="Enter email" autofocus required /> <br/><br/>
@@ -172,6 +197,60 @@
     Certificates:<input type="file" required multiple placeholder="add files "/><br/><br/>
     <input name="language" type="text" value="English" hidden>
     <input type="submit" formmethod="POST" placeholder="this is button"><br/>    
-</form>
+</form><br><br>
+<hr>
+    <h2>Excercise 2:</h2>
+    <header>
+        <h1>Sign Up!</h1>
+    </header>
+    <article>
+        <form action="success.html" method="get">
+            <table>
+                <tr>
+                    <td><br>Username:</td>
+                    <td><br><input type="text" name="UserName" placeholder="Enter Username" required/></td> <!-- Add placeholder and required attributes -->
+                </tr>
+                <tr>
+                    <td>Password:</td>
+                    <td><input type="password" name="name" placeholder="Enter your password" required/></td> <!-- Add placeholder and required attributes -->
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>Male<input type="radio" name="user_gender" value="M" />&nbsp; Female<input type="radio" name="user_gender"
+                        value="F"></td>
+                </tr>
+                <tr>
+                    <td>DOB:</td>
+                    <td><input type="date" name="user_date" required/></td> <!-- Add required attribute -->
+                </tr>
+                <tr>
+                    <td>Phone number:</td>
+                    <td><input type="text" name="phone" placeholder="Enter your mobile number" pattern="/^+91(7\d|8\d|9\d)\d{9}$/" required/><br><br></td> <!-- Add placeholder, pattern and required attributes -->
+                </tr>
+                <tr>
+                    <td>Email ID:</td>
+                    <td><input type="email" name="user_email" placeholder="Enter email" required /></td> <!-- Add placeholder and required attributes -->
+                </tr>
+                <tr>
+                    <td><br>Languages Known:</td>
+                    <td><br><input type="checkbox" name="Langauges" value="English" checked="checked" />English <input type="checkbox"
+                        name="Langauges" value="Hindi" /> Hindi <input type="checkbox" name="Langauges" value="French" /> French </td>
+                </tr>
+                <tr>
+                    <td><br>Profile pic:</td>
+                    <td><br><input type="file" required/></td> <!-- Add required attribute -->
+                </tr>
+                <tr>
+                    <td><br /><br /><input type="submit" value="Register" />
+                    <td><br /><br /><input type="reset" value="Reset" />
+                </tr>
+            </table>
+        </form> 
+        <br /> <br /> <br /> <br />
+    </article>
+    <footer>
+        <nav> About Us | Privacy Policy | Contact Us | FAQ | Terms & Conditions </nav> Copyright &copy; 2018 | Giri
+    </footer>
+    <aside> Like and Connect with us FB Twitter g+ </aside>
 </body>
 </html>
