@@ -20,6 +20,10 @@
     ul {
         list-style: disc;
     }
+    h2 {
+        text-align: center;
+        text-decoration: underline;
+    }
  </style>
 <body>
     <table style="margin-left: auto; margin-right: auto;">
@@ -191,7 +195,185 @@
                 <li>Syntax: <strong>&lt;iframe> src="youtube url format:- https://www.youtube.com/embed/VIDEO_ID" width="Specifies width in PIXEL" height="Specifies height in PIXEL">&lt;/iframe></strong></li>
                 <iframe src="https://www.youtube.com/embed/OpWjt_wbV4E" width="550px" height="250px"></iframe>
             </ul>
+            <h2>Important in iframe</h2>
+            <li><mark>The below example demonstrates including a web page myPage.html on clicking on the hyperlink.(Nested webpage loading)</mark></li>
+                <ul>
+                    <li>Syntax: <br> 
+                    <strong> &lt;a href="https://www.w3schools.com/html/html_iframe.asp" target="iframe name (myframe)"> Click here to load w3 html5 iframe &lt;a></strong><br>
+                    <strong> &lt;iframe name="myframe" width="600" height="400">&lt;iframe></strong>
+                    </li>
+                    <li>
+                    <a href="/index.html" target="myMainIndexFile">Click here to open [http5-concept site(hosted)] using iFrame concept</a><br>
+                    </li>
+                    <iframe name="myMainIndexFile" width="900px" height="500px"></iframe><br>
+                    <li>Ensure the usage of <strong>sandbox</strong> attribute to the iframe to avoid security threats such as clickjacking.</li>
+                </ul>
         </li>
+        <hr>
+        <h2>Sandbox Attribute</h2>
+        <p>This attribute helps the developer to apply extra restrictions for the content which can be embedded into the iframe element.</p>
+        <p>Some of the scenarios where this attribute can be used are:</p>
+        <ol>
+            <li>To validate whether the content is populated from a unique origin or not.</li>
+            <li>To block the form submission and script execution.</li>
+            <li>APIs invocation can be disabled.</li>
+            <li>Other browser context linking and usage of various plugins like &lt;applet>, &lt;embed> can be prevented.</li>
+            <li>Navigating to a Top-level browsing context can be avoided.</li>
+            <li>Auto video/audio pre-load features can be restricted.</li>
+        </ol>
+        <p>Example: <strong>&lt;iframe sandbox=""></strong></p>
+        <p><mark>The sandbox attribute with an empty value enables all the default restrictions automatically.</mark></p>
+               
+        <table>
+            <caption>Some possible values of the 'sandbox' attribute are shown below:</caption>
+            <tr>
+                <th>Value</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td>(no value)</td>
+                <td>Enables all restrictions</td>
+            </tr>
+
+            <tr>
+                <td>allow-forms</td>
+                <td>Allows users to submit the form</td>
+            </tr>
+            <tr>
+                <td>allow-scripts</td>
+                <td>Scripts execution would be enabled.</td>
+            </tr>
+
+            <tr>
+                <td>allow-same-origin</td>
+                <td>iframe content would be considered as accessed from the same origin</td>
+            </tr>
+            <tr>
+                <td>allow-popups</td>
+                <td>Popups can be enabled.</td>
+            </tr>
+
+            <tr>
+                <td>allow-popups-to-escape-sandbox</td>
+                <td>Popups can be opened in new windows without any sandbox restrictions.</td>
+            </tr>
+            <tr>
+                <td>allow-orientation-lock</td>
+                <td>The orientation of the Screen can be locked.</td>
+            </tr>
+
+            <tr>
+                <td>allow-pointer-lock</td>
+                <td>Pointer Lock API can be accessed.</td>
+            </tr>
+
+            <tr>
+                <td>allow-presentation</td>
+                <td>Session Presentation is enabled for the user.</td>
+            </tr>
+
+            <tr>
+                <td>allow-top-navigation</td>
+                <td>iframe content can access its top-level browsing context.</td>
+            </tr>
+
+            <tr>
+                <td>allow-top-navigation-by-user-activation</td>
+                <td>iframe content can access its top-level browsing context only through user interaction.</td>
+            </tr>
+        </table>
+        <p>For example, the below-given code demonstrates how to enable <strong>Form submission and Script execution for xyz.html page.</strong></p>
+        <p>Syntax: <strong>&lt;iframe src="xyz.htm" sandbox="allow-forms allow-scripts ">&lt;/iframe></strong></p>
     </ol>
+    <hr>
+<!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+    <h2 style="text-align: left;">Excercise 1:</h2>
+    <header>
+        <nav>
+            <a href="Login.html"> Login </a> | 
+            <a href="Signup.html"> SignUp </a> | 
+            <a href="TrackOrder.html"> Track order </a>
+        </nav> 
+        <h1>Welcome to Hussain's Shopping</h1> 
+        <nav>
+            <a href="#Clothing"> Clothing </a> | 
+            <a href="#Media"> Media </a> 
+        </nav>
+    </header>
+        
+    <article>
+        Hussain & Co very own one-stop solution for all your shopping needs ! <br/>
+        Dont believe us? Click on the offers and check it out for yourself !! 
+
+        <h2 id="Clothing"> Clothing </h2>
+        <img src="https://www.telegraph.co.uk/content/dam/men/2022/01/12/Main-image_trans_NvBQzQNjv4Bq2oUEflmHZZHjcYuvN_Gr-bVmXC2g6irFbtWDjolSHWg.jpg" alt="Image unavailable" width="350px" height="220px"/>
+
+        <img src="https://img.freepik.com/premium-photo/handsome-businessman-handsome-young-man-smart-casual-wear-carrying-disposable-cup-while-walking-through-city-street_425904-13963.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1696982400&semt=ais" alt="Image unavailable" width="350px" height="220px"/>
+
+        <img src="https://img.freepik.com/free-photo/portrait-handsome-fashion-stylish-hipster-businessman-model-dressed-elegant-brown-suit-sitting-near-dark_158538-11308.jpg" alt="Image unavailable" width="350px" height="220px"/>
+
+        <img src="https://www.mensjournal.com/.image/t_share/MTk2MTM3Mjk4NDI5OTQ0OTc3/main-short-fashion-.jpg" alt="Image unavailable" width="350px" height="220px"/>
+
+        <img src="https://images.pexels.com/photos/298863/pexels-photo-298863.jpeg?cs=srgb&dl=pexels-terje-sollie-298863.jpg&fm=jpg" alt="Image unavailable" width="350px" height="220px"/>
+        
+
+        <h2 id="Media"> Media </h2>
+        <!-- Add audio element here -->
+        <audio controls>
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+            <!-- when it cant load upper src then he tries to load any other from mentioned inside source the first one loaded get playeds -->
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+            Your browser does not support the Audio tag.
+        </audio>
+        <audio controls>
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+        </audio>
+        <audio controls>
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+        </audio>
+        <audio controls>
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+        </audio>
+        <audio controls>
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+        </audio>
+        <audio controls>
+            <source src="https://wynk.in/u/n7bIS8iGG" type="audio/mp3">
+        </audio>
+        
+        <br/><br><br>
+
+        <!-- Add video element here -->
+        <video src="https://www.youtube.com/embed/HMUDVMiITOU" width="350px" height="200px" poster="https://media3.giphy.com/media/6BZaFXBVPBtok/giphy.gif" controls ></video>
+        <video src="https://www.youtube.com/embed/HMUDVMiITOU" width="350px" height="200px" poster="https://media.tenor.com/6YX4QrCXrgYAAAAd/jerry-hungry.gif" controls ></video>
+        <video src="https://www.youtube.com/embed/HMUDVMiITOU" width="350px" height="200px" poster="https://66.media.tumblr.com/ebd2c3a21f512edb5163708fe269b4c9/tumblr_pn40sxY8Rh1x6lumfo1_500.gif" controls ></video>
+        <video src="https://www.youtube.com/embed/HMUDVMiITOU" width="350px" height="200px" poster="https://media.tenor.com/oKkaG3hwyaAAAAAC/heartbeat-tom-and-jerry.gif" controls ></video>
+        
+        <video width="350px" height="200px" poster="https://i.gifer.com/1Gs1.gif" controls>
+            <source src="https://www.youtube.com/embed/HMUDVMiITOU" type="video/mp4" >
+            <source src="https://www.youtube.com/embed/HMUDVMiITOU" type="video/mp4" >
+            Your browser does not support the video tag.
+        </video>
+            
+    </article><br><br><br>     
+
+    <footer>                           
+        <nav> 
+            About Us | Privacy Policy | Contact Us | FAQ | Terms & Conditions 
+        </nav>
+        Copyright &copy; 2018 | Giri  
+    </footer> 
+
+    <aside>
+        Like and Connect with us FB Twitter g+
+    </aside> 
 </body>
 </html>
