@@ -162,8 +162,34 @@
                             <td>Mutes audio</td>
                         </tr>
                     </table><br>
-                <li>Video: <video src="https://drive.google.com/file/d/1wFViPKIYd7PBmDX2wKRRsqWEs9W-RnxR/view?usp=sharing" poster="https://i.pinimg.com/originals/e2/63/00/e26300c0c746d3163a0f48223c897cee.gif" width="250px" controls></video></li><br><br>
+                <li>Video: <video src="https://www.youtube.com/embed/CH50zuS8DD0" poster="https://i.pinimg.com/originals/e2/63/00/e26300c0c746d3163a0f48223c897cee.gif" width="250px" controls></video></li><br><br>
                 
+            </ul>
+        </li>
+        <hr>
+        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        <h2 style="text-align: center;"><u>Source Element</u></h2>
+        <ol>
+            <li>All browsers do not support all audio/video formats. Therefore, the audio/video element allows you to list multiple sources with the <source> element. The <source> element has an attribute 'type' which specifies the type of the file.</li>
+            <li>The browser iterates through all sources one by one until it finds one which it can play. It should be noted that while listing the audio/video formats, it should be in the order from most desirable to least desirable to avoid the number of unnecessary iterations.</li>
+            <li><strong>Also, it is suggested to use the &lt;source> element within the audio/video element instead of the src attribute.</strong></li>
+            <li>Syntax: <br>
+                &lt;audio> <br>
+                   &nbsp;&nbsp;&nbsp;&nbsp; &lt;source src="myaudio.ogg" type="audio/ogg"><br>
+                   &nbsp;&nbsp;&nbsp;&nbsp; &lt;source src="myaudio.mp3" type="audio/mp3"> <br>
+                 &lt;/audio>
+            </li>
+        </ol>
+        <hr>
+        <!-- --------------------------------------------------------------------------------------------------------------------------------------------------- -->
+        
+        <li>iFrame:
+            <ul>
+                <li>We might have requirements to include documents, videos, interactive videos, or even other web content into a web page directly from external sources.</li>
+                <li>The &lt;iframe> element is used to meet the above requirement. Using the iframe element, contents from external sources can be integrated anywhere on our web page</li>
+                <li>It is defined using &lt;iframe>…&lt;/iframe> tag</li>
+                <li>Syntax: <strong>&lt;iframe> src="youtube url format:- https://www.youtube.com/embed/VIDEO_ID" width="Specifies width in PIXEL" height="Specifies height in PIXEL">&lt;/iframe></strong></li>
+                <iframe src="https://www.youtube.com/embed/OpWjt_wbV4E" width="550px" height="250px"></iframe>
             </ul>
         </li>
     </ol>
