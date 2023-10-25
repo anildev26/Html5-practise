@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5 Security Checklist</title>
+</head>
+<style>
+    ol li{
+        font-weight: bold;
+    }
+    p {
+        font-weight: lighter;
+    }
+</style>
+<body> 
+    <ul>
+        <li>Every web developer will be using HTML for creating web pages.</li>
+        <li>Let us understand the security best practices that the developer should follow during HTML coding to create a secure web application.
+            <br><br>
+          <ol>
+            <li>Do not just rely on client-side validation
+              <p>HTML5 provides features to perform client-side validation. But do not just rely on the client-side validation, ensure that validation is performed on the server-side as well for sensitive actions like authentication.</p>
+            </li>
+            <li>Sanitize user inputs
+              <p>Any input from the user is to be assumed as untrusted. Proper sanitization of input data provides protection from different kinds of attacks like HTML Injection, etc.</p>
+            </li>
+            <li>Use the attributes "noopener" and "noreferrer" whenever a link is provided to open in a new tab.
+              <p><b>&lt;a href="https://www.mysite.com" target="_blank" rel="noopener noreferrer">Mysite&lt;/a></b></p>
+              <p>The "noopener" attribute instructs the browser not to grant the browsing context access to the document that opened its new link.</p>
+              <p>The "noreferrer" attribute prevents the browser from sending the page address, or any other value, as the referrer when navigating to another page.</p>
+            </li>
+            <li>Use the sandbox attribute of an iframe
+              <p>Make sure to add the "sandbox" attribute to the iFrame feature of HTML5 as it provides additional restrictions to the content.</p>
+            </li>
+            <li>Eliminate comments from the final code
+              <p>Use comments only for documentation purposes. Avoid the usage of comments to store sensitive information in the HTML as it is entirely visible. Any unwanted comment is to be removed before the production build. Modern browsers can inspect the commented code, and sensitive information can be retrieved.</p>
+            </li>
+            <li>Refer to the latest security news
+              <p>Keep checking the latest news in the security area as the internet is growing, and new security features and techniques may get implemented every day.</p>
+            </li>
+            <li>Use a Content Security Policy (CSP)
+              <p>With the aim of protecting the application from potential dangers, use a Content Security Policy to delimit the assets that are permissible to be added to the application.</p>
+              <p>To ensure including the media in a secure way,</p>
+              <p> - use the CSP directive img-src to load images from valid sources</p>
+              <p> - use the CSP directive media-src to load audio and video from valid sources</p>
+            </li>
+            <li>Use web storage judiciously.
+              <p>Avoid storing sensitive data in web storage since it is stored in the browser.</p>
+            </li>
+            <li>Use safe methods.
+              <p>Know about safe methods in a language/technology and use them for secure coding. For example, using innerText or textContent property is safe instead of innerHTML in JavaScript.</p>
+            </li>
+            <li>Implement CORS Policy
+              <p>Implement CORS policy to allow access to the application services.</p>
+            </li>
+          </ol>
+        </li>
+      </ul>
+      
+</body>
+</html>
